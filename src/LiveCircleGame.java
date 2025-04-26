@@ -30,6 +30,7 @@ public class LiveCircleGame {
             // Просим текущего игрока назвать слово, начинающееся с последней буквы предыдущего слова
             if (!lastWord.isEmpty()) {
                 lastChar = lastWord.charAt(lastWord.length() - 1);
+
                 //Проверка символа, если слово оканчивается на 'ь', 'ъ', 'ы'
                 for (char ch : letters) {
                     if (ch == lastChar && lastWord.length() > 1) {
